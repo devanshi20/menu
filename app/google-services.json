@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "314099892315",
+    "firebase_url": "https://androidingredient.firebaseio.com",
+    "project_id": "androidingredient",
+    "storage_bucket": "androidingredient.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314099892315:android:96a2873a4a4d90e5",
+        "android_client_info": {
+          "package_name": "com.example.atul_.ingredients"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314099892315-oc801kuj0n87qbcreuu29bbtb78t86hs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.atul_.ingredients",
+            "certificate_hash": "56802bef5e69759625fccda06e29c746e876dc47"
+          }
+        },
+        {
+          "client_id": "314099892315-4cuk8qi0asvi87gghjq3n9jtl3g4nr9u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXIneoZUAkVfzu2mPfZyeyc2h1rsIRRQU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314099892315-4cuk8qi0asvi87gghjq3n9jtl3g4nr9u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
