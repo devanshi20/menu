@@ -3,6 +3,7 @@ package com.atul_ingredients.atul_ingredients;
 import android.app.ProgressDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
@@ -19,6 +20,8 @@ import com.google.firebase.database.MutableData;
 import com.google.firebase.database.ValueEventListener;
 
 public class SignIn extends AppCompatActivity {
+
+    public static final String TAG = SignIn.class.getSimpleName();
 
     EditText edtPhone,edtPassword;
     Button btnSignIn;
@@ -60,8 +63,7 @@ public class SignIn extends AppCompatActivity {
                     }
 
                     public void onCancelled(DatabaseError databaseError) {
-
-
+                        Log.d(TAG, databaseError.getDetails());
                     }
                 });
 
