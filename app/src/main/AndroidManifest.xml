@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.atul_ingredients.atul_.atul_ingredients">
+    package="com.atul_ingredient.project">
 
     <application
         android:allowBackup="true"
@@ -9,17 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.atul_ingredients.project.SignIn">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity$SignIn">
-        </activity>
-        <activity android:name="com.atul_ingredients.atul_ingredients.SignIn">
-        </activity>
+        <activity android:name="com.atul_ingredients.project.MainActivity"></activity>
     </application>
 
 </manifest>

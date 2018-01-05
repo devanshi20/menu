@@ -1,22 +1,18 @@
-package com.atul_ingredients.atul_ingredients;
+package com.atul_ingredients.project;
 
-import android.app.ProgressDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CalendarView;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.atul_ingredients.atul_ingredients.Module.User;
-import com.atul_ingredients.atul_ingredients.R;
+import com.atul_ingredient.project.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.MutableData;
 import com.google.firebase.database.ValueEventListener;
 
 public class SignIn extends AppCompatActivity {
@@ -29,12 +25,12 @@ public class SignIn extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in2);
+        setContentView(R.layout.activity_sign_in);
         edtPassword=(EditText)findViewById(R.id.edtPassword);
-        edtPhone= (EditText)findViewById(R.id.edtPhone);
+        edtPhone= (EditText)findViewById(R.id.edtphone);
         btnSignIn= (Button)findViewById(R.id.btnSignIn);
 
-      final   FirebaseDatabase database=FirebaseDatabase.getInstance();
+        final FirebaseDatabase database=FirebaseDatabase.getInstance();
         final DatabaseReference table_user=database.getReference("User");
 
         btnSignIn.setOnClickListener(new View.OnClickListener()
